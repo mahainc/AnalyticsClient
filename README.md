@@ -1,19 +1,19 @@
-# AnalyticClient
+# AnalyticsClient
 
 A TCA-style dependency client wrapping Firebase Analytics + Crashlytics behind a uniform `trackEvent` / `trackScreen` / `setUserProperty` / `recordError` surface. Includes an OS Logger for tracing every call through Console.app.
 
 ## Layout
 
-- **`AnalyticClient`** — interface: `initialize`, `trackScreen`, `trackEvent`, `setUserID`, `setUserProperty`, `setAnalyticsCollectionEnabled`, `log`, `recordError`, plus a `Param` value type and `AnalyticConfig`. Ships a `Logger.analyticClient` static so the live impl (and downstream code) can route events through OSLog with a known subsystem.
-- **`AnalyticClientLive`** — Firebase Analytics + Crashlytics wrapper that registers the live `DependencyKey` and emits OS Logger info / notice events as it crosses the façade.
+- **`AnalyticsClient`** — interface: `initialize`, `trackScreen`, `trackEvent`, `setUserID`, `setUserProperty`, `setAnalyticsCollectionEnabled`, `log`, `recordError`, plus a `Param` value type and `AnalyticsConfig`. Ships a `Logger.analyticsClient` static so the live impl (and downstream code) can route events through OSLog with a known subsystem.
+- **`AnalyticsClientLive`** — Firebase Analytics + Crashlytics wrapper that registers the live `DependencyKey` and emits OS Logger info / notice events as it crosses the façade.
 
 ## Installation
 
 ```swift
-.package(url: "https://github.com/mahainc/AnalyticClient.git", from: "1.1.0"),
+.package(url: "https://github.com/mahainc/AnalyticsClient.git", from: "1.1.0"),
 ```
 
-`AnalyticClient` on feature targets; `AnalyticClientLive` on the app target.
+`AnalyticsClient` on feature targets; `AnalyticsClientLive` on the app target.
 
 ## Configure Firebase
 
@@ -22,17 +22,17 @@ Ensure `FirebaseApp.configure()` runs at app launch (typically in `AppDelegate.a
 Then initialize the client at app start:
 
 ```swift
-import AnalyticClient
+import AnalyticsClient
 
-@Dependency(\.analyticClient) var analytics
+@Dependency(\.analyticsClient) var analytics
 
-await analytics.initialize(AnalyticConfig(/* … */))
+await analytics.initialize(AnalyticsConfig(/* … */))
 ```
 
 ## Usage
 
 ```swift
-import AnalyticClient
+import AnalyticsClient
 import ComposableArchitecture
 
 @Reducer
@@ -42,7 +42,7 @@ struct OnboardingFeature {
         case startTapped
     }
 
-    @Dependency(\.analyticClient) var analytics
+    @Dependency(\.analyticsClient) var analytics
 
     var body: some ReducerOf<Self> {
         Reduce { state, action in
@@ -64,10 +64,10 @@ struct OnboardingFeature {
 
 ## Console tracing
 
-Every call routes through `Logger.analyticClient` (subsystem `com.mahainc.AnalyticClient`, category `live`):
+Every call routes through `Logger.analyticsClient` (subsystem `com.mahainc.AnalyticsClient`, category `live`):
 
 ```bash
-log stream --predicate 'subsystem == "com.mahainc.AnalyticClient"'
+log stream --predicate 'subsystem == "com.mahainc.AnalyticsClient"'
 ```
 
 `.info` for normal traffic, `.notice` when Firebase will silently drop a payload (reserved param prefix, etc.).
@@ -80,8 +80,8 @@ log stream --predicate 'subsystem == "com.mahainc.AnalyticClient"'
 let store = TestStore(initialState: OnboardingFeature.State()) {
     OnboardingFeature()
 } withDependencies: {
-    $0.analyticClient.trackEvent = { _, _ in }
-    $0.analyticClient.trackScreen = { _, _ in }
+    $0.analyticsClient.trackEvent = { _, _ in }
+    $0.analyticsClient.trackScreen = { _, _ in }
 }
 ```
 

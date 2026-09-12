@@ -1,5 +1,5 @@
+import AnalyticsClient
 import Dependencies
-import AnalyticClient
 @preconcurrency import FirebaseAnalytics
 @preconcurrency import FirebaseCrashlytics
 import OSLog
@@ -10,17 +10,17 @@ import OSLog
 /// the drop on our own subsystem so call-site bugs are obvious.
 private let reservedParamPrefixes: [String] = ["firebase_", "google_", "ga_"]
 
-private func droppedReservedKeys(_ params: [String: AnalyticClient.Param]) -> [String] {
+private func droppedReservedKeys(_ params: [String: AnalyticsClient.Param]) -> [String] {
     params.keys.filter { key in
         reservedParamPrefixes.contains { key.hasPrefix($0) }
     }
 }
 
-extension AnalyticClient: DependencyKey {
+extension AnalyticsClient: DependencyKey {
     public static var liveValue: Self {
         .init(
             initialize: { config in
-                Logger.analyticClient.info(
+                Logger.analyticsClient.info(
                     "initialize — collectionEnabled=\(config.collectionEnabled, privacy: .public) userID=\(config.userID ?? "nil", privacy: .public) properties=\(config.userProperties.count, privacy: .public)"
                 )
                 Analytics.setAnalyticsCollectionEnabled(config.collectionEnabled)
@@ -35,11 +35,11 @@ extension AnalyticClient: DependencyKey {
             trackScreen: { name, params in
                 let dropped = droppedReservedKeys(params)
                 if !dropped.isEmpty {
-                    Logger.analyticClient.notice(
+                    Logger.analyticsClient.notice(
                         "trackScreen(\(name, privacy: .public)) — Firebase will DROP params with reserved prefix: \(dropped.joined(separator: ","), privacy: .public)"
                     )
                 }
-                Logger.analyticClient.info(
+                Logger.analyticsClient.info(
                     "trackScreen(\(name, privacy: .public)) paramCount=\(params.count, privacy: .public)"
                 )
                 var merged: [String: Any] = [
@@ -52,11 +52,11 @@ extension AnalyticClient: DependencyKey {
             trackEvent: { name, params in
                 let dropped = droppedReservedKeys(params)
                 if !dropped.isEmpty {
-                    Logger.analyticClient.notice(
+                    Logger.analyticsClient.notice(
                         "trackEvent(\(name, privacy: .public)) — Firebase will DROP params with reserved prefix: \(dropped.joined(separator: ","), privacy: .public)"
                     )
                 }
-                Logger.analyticClient.info(
+                Logger.analyticsClient.info(
                     "trackEvent(\(name, privacy: .public)) paramCount=\(params.count, privacy: .public)"
                 )
                 if params.isEmpty {
@@ -68,30 +68,33 @@ extension AnalyticClient: DependencyKey {
                 }
             },
             setUserID: { id in
-                Logger.analyticClient.debug("setUserID(\(id ?? "nil", privacy: .public))")
+                Logger.analyticsClient.debug("setUserID(\(id ?? "nil", privacy: .public))")
                 // Crashlytics clears with `""`; Analytics clears with `nil`.
                 Crashlytics.crashlytics().setUserID(id ?? "")
                 Analytics.setUserID(id)
             },
             setUserProperty: { value, name in
-                Logger.analyticClient.info(
+                Logger.analyticsClient.info(
                     "setUserProperty(\(name, privacy: .public)=\(value ?? "nil", privacy: .public))"
                 )
                 // Firebase accepts `nil` to clear the property.
                 Analytics.setUserProperty(value, forName: name)
             },
             setAnalyticsCollectionEnabled: { enabled in
-                Logger.analyticClient.info(
+                Logger.analyticsClient.info(
                     "setAnalyticsCollectionEnabled(\(enabled, privacy: .public))"
                 )
                 Analytics.setAnalyticsCollectionEnabled(enabled)
             },
+            sessionID: {
+                try? await Analytics.sessionID()
+            },
             log: { message in
-                Logger.analyticClient.debug("crashlytics.log(\(message, privacy: .public))")
+                Logger.analyticsClient.debug("crashlytics.log(\(message, privacy: .public))")
                 Crashlytics.crashlytics().log(message)
             },
             recordError: { error, userInfo in
-                Logger.analyticClient.notice(
+                Logger.analyticsClient.notice(
                     "recordError: \(error.localizedDescription, privacy: .public) userInfoKeys=\(userInfo?.keys.joined(separator: ",") ?? "nil", privacy: .public)"
                 )
                 if let userInfo {

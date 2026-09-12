@@ -1,6 +1,6 @@
 import Foundation
 
-extension AnalyticClient {
+extension AnalyticsClient {
     /// Typed, extensible screen/segment token for composing `/`-delimited
     /// `screen_path` breadcrumbs.
     ///
@@ -11,13 +11,13 @@ extension AnalyticClient {
     ///
     /// ```swift
     /// // In the app:
-    /// extension AnalyticClient.Screen {
+    /// extension AnalyticsClient.Screen {
     ///     static let matches = Self("matches")
     ///     static let pickTeams = Self("pick_teams")
     /// }
     ///
     /// // Compose a path:
-    /// AnalyticClient.Screen.path(.matches, .web) // == "matches/web"
+    /// AnalyticsClient.Screen.path(.matches, .web) // == "matches/web"
     /// ```
     ///
     /// Backed by a raw string so any value is representable, and
@@ -42,7 +42,7 @@ extension AnalyticClient {
     }
 }
 
-extension AnalyticClient.Screen: ExpressibleByStringLiteral {
+extension AnalyticsClient.Screen: ExpressibleByStringLiteral {
     public init(stringLiteral value: String) {
         self = .init(value)
     }
