@@ -21,7 +21,7 @@ extension AnalyticsClient {
         setUserID: { _ in },
         setUserProperty: { _, _ in },
         setAnalyticsCollectionEnabled: { _ in },
-        sessionID: { nil },
+        currentSessionID: { nil },
         log: { _ in },
         recordError: { _, _ in }
     )

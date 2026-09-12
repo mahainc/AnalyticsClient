@@ -1,0 +1,41 @@
+{
+  "path": "Sources/AnalyticClientLive/LogEventInterceptor.swift",
+  "history": [
+    {
+      "markers": 2,
+      "decls_digest": "6248d2b2f0bd0ec1404d3406e96251666858c0554cb0a691601edd8210c4368a"
+    },
+    {
+      "markers": 0,
+      "decls_digest": "8cb1f87b29cfa92615a2e0982f87d44c2f300205cd147f56fa0e5e5880f8704d"
+    },
+    {
+      "markers": 0,
+      "decls_digest": "a18aa525737864caf5ed329ff651c73a9a059d8b86216c7e9bd3612ee121446f"
+    }
+  ],
+  "decls": [
+    {
+      "kind": "enum",
+      "name": "LogEventInterceptor",
+      "signature": "()"
+    },
+    {
+      "kind": "function",
+      "name": "install",
+      "signature": "(_ forward: @escaping Forward)"
+    },
+    {
+      "kind": "function",
+      "name": "block",
+      "signature": "(block)"
+    },
+    {
+      "kind": "function",
+      "name": "isRelayed",
+      "signature": "(_ name: String)"
+    }
+  ],
+  "decls_digest": "a18aa525737864caf5ed329ff651c73a9a059d8b86216c7e9bd3612ee121446f",
+  "markers": 0
+}

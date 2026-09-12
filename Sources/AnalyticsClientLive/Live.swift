@@ -86,7 +86,7 @@ extension AnalyticsClient: DependencyKey {
                 )
                 Analytics.setAnalyticsCollectionEnabled(enabled)
             },
-            sessionID: {
+            currentSessionID: {
                 try? await Analytics.sessionID()
             },
             log: { message in

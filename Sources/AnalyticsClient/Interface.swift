@@ -29,7 +29,7 @@ public struct AnalyticsClient: Sendable {
     /// every event as `ga_session_id`. `nil` until the SDK has opened a session, and on
     /// any backend that has no notion of one. Async because the SDK resolves it off the
     /// calling thread.
-    public var sessionID: @Sendable () async -> Int64? = { nil }
+    public var currentSessionID: @Sendable () async -> Int64? = { nil }
     public var log: @Sendable (_ message: String) async -> Void
     public var recordError: @Sendable (_ error: any Error & Sendable, _ userInfo: [String: Param]?) async -> Void
 }

@@ -1,0 +1,66 @@
+{
+  "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+  "history": [
+    {
+      "markers": 6,
+      "decls_digest": "a6742d9c738669d19caa433a8e791288027d0f158f0d7c89ae1632af9617d0fc"
+    },
+    {
+      "markers": 0,
+      "decls_digest": "6931ac1c80cf7fab7f8bed690dbb4bb3cde4a98818c99b7f610c567bf182e9d8"
+    },
+    {
+      "markers": 0,
+      "decls_digest": "6931ac1c80cf7fab7f8bed690dbb4bb3cde4a98818c99b7f610c567bf182e9d8"
+    }
+  ],
+  "decls": [
+    {
+      "kind": "class",
+      "name": "AnalyticFunnelProvider",
+      "signature": "()"
+    },
+    {
+      "kind": "enum",
+      "name": "Call",
+      "signature": "()"
+    },
+    {
+      "kind": "function",
+      "name": "init",
+      "signature": "(client: AnalyticClient)"
+    },
+    {
+      "kind": "function",
+      "name": "deinit",
+      "signature": "()"
+    },
+    {
+      "kind": "function",
+      "name": "logEvent",
+      "signature": "(_ name: String, parameters: [String: FunnelClient.Analytics.Value])"
+    },
+    {
+      "kind": "function",
+      "name": "setUserProperty",
+      "signature": "(_ value: String?, forName name: String)"
+    },
+    {
+      "kind": "function",
+      "name": "sessionID",
+      "signature": "()"
+    },
+    {
+      "kind": "function",
+      "name": "perform",
+      "signature": "(_ call: Call, on client: AnalyticClient)"
+    },
+    {
+      "kind": "function",
+      "name": "param",
+      "signature": "(_ value: FunnelClient.Analytics.Value)"
+    }
+  ],
+  "decls_digest": "6931ac1c80cf7fab7f8bed690dbb4bb3cde4a98818c99b7f610c567bf182e9d8",
+  "markers": 0
+}

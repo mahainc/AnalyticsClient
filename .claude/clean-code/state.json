@@ -1,0 +1,1049 @@
+{
+  "version": 1,
+  "policy": "normalize",
+  "hash": "47811d3793e17dbb627944d9d3248bceff3846fc88c38c5cd161d05d1342c0e8",
+  "units": [
+    {
+      "id": "u1",
+      "path": "Package.swift",
+      "kind": "module",
+      "kinds": [
+        "change",
+        "module"
+      ],
+      "start": 7,
+      "end": 36,
+      "side": "new",
+      "name": "(file scope)",
+      "sha": "6560f0a5",
+      "digests": {
+        "decl": "6560f0a5a1e8cfbe",
+        "body": "6560f0a5a1e8cfbe",
+        "unit": "6560f0a5a1e8cfbe",
+        "file": "8237f309eecb29fd"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u2",
+      "path": "Sources/AnalyticClient/Interface.swift",
+      "kind": "struct",
+      "kinds": [
+        "change",
+        "struct"
+      ],
+      "start": 11,
+      "end": 35,
+      "side": "new",
+      "name": "AnalyticClient",
+      "sha": "bd3dd5bb",
+      "digests": {
+        "decl": "0b7b6c4342bd3f8a",
+        "body": "d493799dca21b455",
+        "unit": "bd3dd5bbd4d6bd40",
+        "file": "1bb7653afe59b082"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u3",
+      "path": "Sources/AnalyticClient/Mocks.swift",
+      "kind": "function",
+      "kinds": [
+        "change",
+        "function"
+      ],
+      "start": 17,
+      "end": 18,
+      "side": "new",
+      "name": "init",
+      "sha": "40373aed",
+      "digests": {
+        "decl": "c770f1d8cb3d93cc",
+        "body": "48958c7604c379aa",
+        "unit": "40373aed7ad0e1f3",
+        "file": "d5eb83d09fe9901c"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u4",
+      "path": "Sources/AnalyticClient/Mocks.swift",
+      "kind": "type",
+      "kinds": [
+        "change",
+        "type"
+      ],
+      "start": 15,
+      "end": 28,
+      "side": "new",
+      "name": "AnalyticClient",
+      "sha": "8387c4ad",
+      "digests": {
+        "decl": "1e85a1f4e197ef56",
+        "body": "ca2e2c429992a0d1",
+        "unit": "8387c4ad3fac1212",
+        "file": "d5eb83d09fe9901c"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u5",
+      "path": "Sources/AnalyticClient/Param.swift",
+      "kind": "enum",
+      "kinds": [
+        "change",
+        "enum"
+      ],
+      "start": 21,
+      "end": 66,
+      "side": "new",
+      "name": "Param",
+      "sha": "79fad148",
+      "digests": {
+        "decl": "08d414c1f74e1eec",
+        "body": "d67b3ee985db74d0",
+        "unit": "79fad1483a6ed44c",
+        "file": "de785d5d29af7fae"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u6",
+      "path": "Sources/AnalyticClient/Param.swift",
+      "kind": "function",
+      "kinds": [
+        "change",
+        "function"
+      ],
+      "start": 34,
+      "end": 42,
+      "side": "new",
+      "name": "anyValue",
+      "sha": "df770f61",
+      "digests": {
+        "decl": "99b3194a36afb079",
+        "body": "9ccee09757f7e9f8",
+        "unit": "df770f61d3642db9",
+        "file": "de785d5d29af7fae"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u7",
+      "path": "Sources/AnalyticClient/Param.swift",
+      "kind": "function",
+      "kinds": [
+        "change",
+        "function"
+      ],
+      "start": 47,
+      "end": 55,
+      "side": "new",
+      "name": "stringValue",
+      "sha": "f2f91a0f",
+      "digests": {
+        "decl": "27ff205d062a7476",
+        "body": "8e15e65eb8bc03bd",
+        "unit": "f2f91a0f5afe1936",
+        "file": "de785d5d29af7fae"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u8",
+      "path": "Sources/AnalyticClient/Param.swift",
+      "kind": "function",
+      "kinds": [
+        "change",
+        "function"
+      ],
+      "start": 57,
+      "end": 65,
+      "side": "new",
+      "name": "json",
+      "sha": "d373483d",
+      "digests": {
+        "decl": "2149f0ee98a15b77",
+        "body": "675975ee60eca700",
+        "unit": "d373483de2075244",
+        "file": "de785d5d29af7fae"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u9",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelObserver.swift",
+      "kind": "class",
+      "kinds": [
+        "class"
+      ],
+      "start": 15,
+      "end": 43,
+      "side": "new",
+      "name": "AnalyticFunnelObserver",
+      "sha": "3d3eb14e",
+      "digests": {
+        "decl": "94e902082f1d833e",
+        "body": "32015ca7b6e4cab8",
+        "unit": "3d3eb14ebc5bf364",
+        "file": "af31d2ae0d905137"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u10",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelObserver.swift",
+      "kind": "function",
+      "kinds": [
+        "function"
+      ],
+      "start": 16,
+      "end": 16,
+      "side": "new",
+      "name": "init",
+      "sha": "1b9247c5",
+      "digests": {
+        "decl": "625297f0bdcadde4",
+        "body": "fb212eab68432efc",
+        "unit": "1b9247c5d06999ec",
+        "file": "af31d2ae0d905137"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u11",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelObserver.swift",
+      "kind": "function",
+      "kinds": [
+        "function"
+      ],
+      "start": 18,
+      "end": 22,
+      "side": "new",
+      "name": "startObserving",
+      "sha": "8a27810c",
+      "digests": {
+        "decl": "849c382af494936a",
+        "body": "e13ba6a8fed4c1cd",
+        "unit": "8a27810c22315392",
+        "file": "af31d2ae0d905137"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u12",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelObserver.swift",
+      "kind": "function",
+      "kinds": [
+        "function"
+      ],
+      "start": 28,
+      "end": 42,
+      "side": "new",
+      "name": "values",
+      "sha": "96352831",
+      "digests": {
+        "decl": "1114b0edbce6d914",
+        "body": "36048cea9fe72050",
+        "unit": "9635283192b0638c",
+        "file": "af31d2ae0d905137"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u13",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelObserver.swift",
+      "kind": "module",
+      "kinds": [
+        "module"
+      ],
+      "start": 1,
+      "end": 14,
+      "side": "new",
+      "name": "(file scope)",
+      "sha": "fde1687b",
+      "digests": {
+        "decl": "fde1687b609308b1",
+        "body": "fde1687b609308b1",
+        "unit": "fde1687b609308b1",
+        "file": "af31d2ae0d905137"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u14",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "kind": "class",
+      "kinds": [
+        "class"
+      ],
+      "start": 13,
+      "end": 75,
+      "side": "new",
+      "name": "AnalyticFunnelProvider",
+      "sha": "f6494f1f",
+      "digests": {
+        "decl": "af605a0504ddfd43",
+        "body": "83915453d8f83177",
+        "unit": "f6494f1f18749d1b",
+        "file": "af1f7daa1b46d006"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u15",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "kind": "enum",
+      "kinds": [
+        "enum"
+      ],
+      "start": 14,
+      "end": 17,
+      "side": "new",
+      "name": "Call",
+      "sha": "db68d114",
+      "digests": {
+        "decl": "61075ba1e1e8ca7e",
+        "body": "0bbd85e3b8422ac7",
+        "unit": "db68d114188593c1",
+        "file": "af1f7daa1b46d006"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u16",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "kind": "function",
+      "kinds": [
+        "function"
+      ],
+      "start": 22,
+      "end": 31,
+      "side": "new",
+      "name": "init",
+      "sha": "6d007560",
+      "digests": {
+        "decl": "5c03d8631abac7fb",
+        "body": "3f51d9c3d7f3a2a1",
+        "unit": "6d007560c670ec15",
+        "file": "af1f7daa1b46d006"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u17",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "kind": "function",
+      "kinds": [
+        "function"
+      ],
+      "start": 33,
+      "end": 36,
+      "side": "new",
+      "name": "deinit",
+      "sha": "4a159a4c",
+      "digests": {
+        "decl": "b57afc929d80006c",
+        "body": "c4835e6df338c492",
+        "unit": "4a159a4c0accd008",
+        "file": "af1f7daa1b46d006"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u18",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "kind": "function",
+      "kinds": [
+        "function"
+      ],
+      "start": 38,
+      "end": 40,
+      "side": "new",
+      "name": "logEvent",
+      "sha": "eb77d576",
+      "digests": {
+        "decl": "51c0d1879f8c0a3a",
+        "body": "71a2e1b3b36cde55",
+        "unit": "eb77d576e6547837",
+        "file": "af1f7daa1b46d006"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u19",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "kind": "function",
+      "kinds": [
+        "function"
+      ],
+      "start": 45,
+      "end": 47,
+      "side": "new",
+      "name": "setUserProperty",
+      "sha": "d50edbcc",
+      "digests": {
+        "decl": "294c6d1f0854d236",
+        "body": "e88a807171a307e3",
+        "unit": "d50edbccc470ba65",
+        "file": "af1f7daa1b46d006"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u20",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "kind": "function",
+      "kinds": [
+        "function"
+      ],
+      "start": 52,
+      "end": 54,
+      "side": "new",
+      "name": "sessionID",
+      "sha": "e57a860c",
+      "digests": {
+        "decl": "1b76c19e178d0870",
+        "body": "835cdcd415d34e1f",
+        "unit": "e57a860c4c2d1a27",
+        "file": "af1f7daa1b46d006"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u21",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "kind": "function",
+      "kinds": [
+        "function"
+      ],
+      "start": 56,
+      "end": 58,
+      "side": "new",
+      "name": "perform",
+      "sha": "083c0bf4",
+      "digests": {
+        "decl": "f97011b57869410f",
+        "body": "7423d71806143ac2",
+        "unit": "083c0bf4fff0a02e",
+        "file": "af1f7daa1b46d006"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u22",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "kind": "function",
+      "kinds": [
+        "function"
+      ],
+      "start": 66,
+      "end": 74,
+      "side": "new",
+      "name": "param",
+      "sha": "aabd67e5",
+      "digests": {
+        "decl": "4f56eb7bbc19d423",
+        "body": "a4815cd05357ebf3",
+        "unit": "aabd67e5bff3f4a2",
+        "file": "af1f7daa1b46d006"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u23",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "kind": "module",
+      "kinds": [
+        "module"
+      ],
+      "start": 1,
+      "end": 12,
+      "side": "new",
+      "name": "(file scope)",
+      "sha": "a3e31679",
+      "digests": {
+        "decl": "a3e316790cb7b40f",
+        "body": "a3e316790cb7b40f",
+        "unit": "a3e316790cb7b40f",
+        "file": "af1f7daa1b46d006"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u24",
+      "path": "Sources/AnalyticClientLive/Live.swift",
+      "kind": "deletion",
+      "kinds": [
+        "deletion"
+      ],
+      "start": 1,
+      "end": 1,
+      "side": "old",
+      "name": "(removed)",
+      "sha": "6184b4d6",
+      "digests": {
+        "decl": "6184b4d6d61f6201",
+        "body": "6184b4d6d61f6201",
+        "unit": "6184b4d6d61f6201",
+        "file": "684935befafde5b6"
+      },
+      "sealed": [],
+      "removed": "import Dependencies"
+    },
+    {
+      "id": "u25",
+      "path": "Sources/AnalyticClientLive/Live.swift",
+      "kind": "function",
+      "kinds": [
+        "change",
+        "function"
+      ],
+      "start": 20,
+      "end": 109,
+      "side": "new",
+      "name": "liveValue",
+      "sha": "7a1c0e86",
+      "digests": {
+        "decl": "f82687a2f456f0bd",
+        "body": "90c2b0afe96c4d53",
+        "unit": "7a1c0e861c4581af",
+        "file": "684935befafde5b6"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u26",
+      "path": "Sources/AnalyticClientLive/Live.swift",
+      "kind": "module",
+      "kinds": [
+        "change",
+        "module"
+      ],
+      "start": 2,
+      "end": 2,
+      "side": "new",
+      "name": "(file scope)",
+      "sha": "08ca5380",
+      "digests": {
+        "decl": "08ca53808c6d3e21",
+        "body": "08ca53808c6d3e21",
+        "unit": "08ca53808c6d3e21",
+        "file": "684935befafde5b6"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u27",
+      "path": "Sources/AnalyticClientLive/LogEventInterceptor.swift",
+      "kind": "enum",
+      "kinds": [
+        "enum"
+      ],
+      "start": 10,
+      "end": 81,
+      "side": "new",
+      "name": "LogEventInterceptor",
+      "sha": "2b476bad",
+      "digests": {
+        "decl": "7a71dc8d66becc10",
+        "body": "dee240027dc68fc4",
+        "unit": "2b476badc309c40b",
+        "file": "8be3547a44e259a1"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u28",
+      "path": "Sources/AnalyticClientLive/LogEventInterceptor.swift",
+      "kind": "function",
+      "kinds": [
+        "function"
+      ],
+      "start": 25,
+      "end": 71,
+      "side": "new",
+      "name": "install",
+      "sha": "9159efe0",
+      "digests": {
+        "decl": "392402f5f9848876",
+        "body": "2a18dfccbe81d37e",
+        "unit": "9159efe0356baf3b",
+        "file": "8be3547a44e259a1"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u29",
+      "path": "Sources/AnalyticClientLive/LogEventInterceptor.swift",
+      "kind": "function",
+      "kinds": [
+        "function"
+      ],
+      "start": 47,
+      "end": 66,
+      "side": "new",
+      "name": "block",
+      "sha": "eace68a4",
+      "digests": {
+        "decl": "9d4fead6a29cd9e3",
+        "body": "099dbd4766825dce",
+        "unit": "eace68a44bc83108",
+        "file": "8be3547a44e259a1"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u30",
+      "path": "Sources/AnalyticClientLive/LogEventInterceptor.swift",
+      "kind": "function",
+      "kinds": [
+        "function"
+      ],
+      "start": 76,
+      "end": 80,
+      "side": "new",
+      "name": "isRelayed",
+      "sha": "72e690b0",
+      "digests": {
+        "decl": "6c503782b535cd36",
+        "body": "3655bc3f82c71f10",
+        "unit": "72e690b0d279bb51",
+        "file": "8be3547a44e259a1"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u31",
+      "path": "Sources/AnalyticClientLive/LogEventInterceptor.swift",
+      "kind": "module",
+      "kinds": [
+        "module"
+      ],
+      "start": 1,
+      "end": 9,
+      "side": "new",
+      "name": "(file scope)",
+      "sha": "4106babc",
+      "digests": {
+        "decl": "4106babc64ad60d8",
+        "body": "4106babc64ad60d8",
+        "unit": "4106babc64ad60d8",
+        "file": "8be3547a44e259a1"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u32",
+      "path": "Tests/AnalyticClientTests/AnalyticClientTests.swift",
+      "kind": "struct",
+      "kinds": [
+        "change",
+        "struct",
+        "test"
+      ],
+      "start": 7,
+      "end": 84,
+      "side": "new",
+      "name": "AnalyticClientTests",
+      "sha": "95a108e0",
+      "digests": {
+        "decl": "a0031d59b9dc4e54",
+        "body": "07036a39fc14cab0",
+        "unit": "95a108e0211aa456",
+        "file": "da0fe3bd8c4d3fb4"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u33",
+      "path": "Tests/AnalyticClientTests/AnalyticClientTests.swift",
+      "kind": "function",
+      "kinds": [
+        "change",
+        "function",
+        "test"
+      ],
+      "start": 31,
+      "end": 37,
+      "side": "new",
+      "name": "analyticParamItems",
+      "sha": "fe6bbdbd",
+      "digests": {
+        "decl": "391e7becbda9fe89",
+        "body": "eb0728a11b231caa",
+        "unit": "fe6bbdbdc617aa76",
+        "file": "da0fe3bd8c4d3fb4"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u34",
+      "path": "Tests/AnalyticClientTests/AnalyticClientTests.swift",
+      "kind": "function",
+      "kinds": [
+        "change",
+        "function",
+        "test"
+      ],
+      "start": 54,
+      "end": 56,
+      "side": "new",
+      "name": "record",
+      "sha": "3155eb0e",
+      "digests": {
+        "decl": "f070103dc754ef7d",
+        "body": "e23905ad04d056ce",
+        "unit": "3155eb0ec2089903",
+        "file": "da0fe3bd8c4d3fb4"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u35",
+      "path": "Tests/AnalyticClientTests/AnalyticClientTests.swift",
+      "kind": "class",
+      "kinds": [
+        "change",
+        "class",
+        "test"
+      ],
+      "start": 52,
+      "end": 58,
+      "side": "new",
+      "name": "Spy",
+      "sha": "6d79232b",
+      "digests": {
+        "decl": "14f59e7f3bea45e0",
+        "body": "a582e8614107ca7f",
+        "unit": "6d79232bd3a9f83a",
+        "file": "da0fe3bd8c4d3fb4"
+      },
+      "sealed": []
+    },
+    {
+      "id": "u36",
+      "path": "Tests/AnalyticClientTests/AnalyticClientTests.swift",
+      "kind": "function",
+      "kinds": [
+        "change",
+        "function",
+        "test"
+      ],
+      "start": 51,
+      "end": 83,
+      "side": "new",
+      "name": "customClientTypedParams",
+      "sha": "498632a2",
+      "digests": {
+        "decl": "fca9e82666a4e378",
+        "body": "a4e21a218eec0bf0",
+        "unit": "498632a21356efab",
+        "file": "da0fe3bd8c4d3fb4"
+      },
+      "sealed": []
+    }
+  ],
+  "hits": [],
+  "candidates": [
+    {
+      "id": "G5:Package.swift:3c306b04",
+      "code": "G5",
+      "tier": "B",
+      "path": "Package.swift",
+      "line": 7,
+      "evidence": "5 lines also appear in Package.swift itself",
+      "unit": "u1"
+    },
+    {
+      "id": "F1:Sources/AnalyticClient/Mocks.swift:94642178",
+      "code": "F1",
+      "tier": "B",
+      "path": "Sources/AnalyticClient/Mocks.swift",
+      "line": 17,
+      "evidence": "init(initialize:trackScreen:trackEvent:setUserID:setUserProperty:setAnalyticsCollectionEnabled:sessionID:log:recordError:) takes 13 parameters",
+      "unit": "u3"
+    },
+    {
+      "id": "N5:Sources/AnalyticClient/Param.swift:0bf66c9c",
+      "code": "N5",
+      "tier": "B",
+      "path": "Sources/AnalyticClient/Param.swift",
+      "line": 36,
+      "evidence": "short name in a long body: s",
+      "unit": "u5"
+    },
+    {
+      "id": "N5:Sources/AnalyticClient/Param.swift:c4c07a16",
+      "code": "N5",
+      "tier": "B",
+      "path": "Sources/AnalyticClient/Param.swift",
+      "line": 38,
+      "evidence": "short name in a long body: d",
+      "unit": "u5"
+    },
+    {
+      "id": "N5:Sources/AnalyticClient/Param.swift:737772dc",
+      "code": "N5",
+      "tier": "B",
+      "path": "Sources/AnalyticClient/Param.swift",
+      "line": 39,
+      "evidence": "short name in a long body: b",
+      "unit": "u5"
+    },
+    {
+      "id": "G23:Sources/AnalyticClientLive/AnalyticFunnelObserver.swift:0e56e85d",
+      "code": "G23",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelObserver.swift",
+      "line": 32,
+      "evidence": "switch on value also appears in Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "unit": "u9"
+    },
+    {
+      "id": "F4:Sources/AnalyticClientLive/AnalyticFunnelObserver.swift:843931cc",
+      "code": "F4",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelObserver.swift",
+      "line": 15,
+      "evidence": "startObserving has no call site yet",
+      "unit": "u9"
+    },
+    {
+      "id": "F4:Sources/AnalyticClientLive/AnalyticFunnelObserver.swift:df5f3861",
+      "code": "F4",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelObserver.swift",
+      "line": 15,
+      "evidence": "values has no call site yet",
+      "unit": "u9"
+    },
+    {
+      "id": "N5:Sources/AnalyticClientLive/AnalyticFunnelProvider.swift:0bf66c9c",
+      "code": "N5",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "line": 68,
+      "evidence": "short name in a long body: s",
+      "unit": "u14"
+    },
+    {
+      "id": "N5:Sources/AnalyticClientLive/AnalyticFunnelProvider.swift:c4c07a16",
+      "code": "N5",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "line": 70,
+      "evidence": "short name in a long body: d",
+      "unit": "u14"
+    },
+    {
+      "id": "N5:Sources/AnalyticClientLive/AnalyticFunnelProvider.swift:737772dc",
+      "code": "N5",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "line": 71,
+      "evidence": "short name in a long body: b",
+      "unit": "u14"
+    },
+    {
+      "id": "G23:Sources/AnalyticClientLive/AnalyticFunnelProvider.swift:851b1766",
+      "code": "G23",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "line": 67,
+      "evidence": "switch on value also appears in Sources/AnalyticClientLive/AnalyticFunnelObserver.swift",
+      "unit": "u14"
+    },
+    {
+      "id": "F4:Sources/AnalyticClientLive/AnalyticFunnelProvider.swift:74c9c588",
+      "code": "F4",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "line": 13,
+      "evidence": "sessionID has no call site yet",
+      "unit": "u14"
+    },
+    {
+      "id": "F4:Sources/AnalyticClientLive/AnalyticFunnelProvider.swift:55590383",
+      "code": "F4",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "line": 13,
+      "evidence": "perform has no call site yet",
+      "unit": "u14"
+    },
+    {
+      "id": "F4:Sources/AnalyticClientLive/AnalyticFunnelProvider.swift:b900789d",
+      "code": "F4",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/AnalyticFunnelProvider.swift",
+      "line": 13,
+      "evidence": "param has no call site yet",
+      "unit": "u14"
+    },
+    {
+      "id": "N1:Sources/AnalyticClientLive/Live.swift:0304cd89",
+      "code": "N1",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/Live.swift",
+      "line": 100,
+      "evidence": "vague local name: userInfo",
+      "unit": "u25"
+    },
+    {
+      "id": "G29:Sources/AnalyticClientLive/Live.swift:5872a8c1",
+      "code": "G29",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/Live.swift",
+      "line": 37,
+      "evidence": "negative condition: if !dropped.isEmpty {",
+      "unit": "u25"
+    },
+    {
+      "id": "G26:Sources/AnalyticClientLive/Live.swift:39b4f08f",
+      "code": "G26",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/Live.swift",
+      "line": 90,
+      "evidence": "error handling: try? await Analytics.sessionID()",
+      "unit": "u25"
+    },
+    {
+      "id": "G30:Sources/AnalyticClientLive/Live.swift:68caf30f",
+      "code": "G30",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/Live.swift",
+      "line": 20,
+      "evidence": "liveValue spans 90 lines",
+      "unit": "u25"
+    },
+    {
+      "id": "G34:Sources/AnalyticClientLive/Live.swift:0f864693",
+      "code": "G34",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/Live.swift",
+      "line": 20,
+      "evidence": "liveValue nests 3 levels deep",
+      "unit": "u25"
+    },
+    {
+      "id": "G14:Sources/AnalyticClientLive/Live.swift:126ea325",
+      "code": "G14",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/Live.swift",
+      "line": 20,
+      "evidence": "liveValue reaches into analyticClient 10 times",
+      "unit": "u25"
+    },
+    {
+      "id": "G5:Sources/AnalyticClientLive/Live.swift:c56f6483",
+      "code": "G5",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/Live.swift",
+      "line": 20,
+      "evidence": "5 lines also appear in Sources/AnalyticClientLive/Live.swift itself",
+      "unit": "u25"
+    },
+    {
+      "id": "F4:Sources/AnalyticClientLive/LogEventInterceptor.swift:a226c1bb",
+      "code": "F4",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/LogEventInterceptor.swift",
+      "line": 10,
+      "evidence": "install has no call site yet",
+      "unit": "u27"
+    },
+    {
+      "id": "F4:Sources/AnalyticClientLive/LogEventInterceptor.swift:771534d3",
+      "code": "F4",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/LogEventInterceptor.swift",
+      "line": 10,
+      "evidence": "block has no call site yet",
+      "unit": "u27"
+    },
+    {
+      "id": "F4:Sources/AnalyticClientLive/LogEventInterceptor.swift:9f9eb369",
+      "code": "F4",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/LogEventInterceptor.swift",
+      "line": 10,
+      "evidence": "isRelayed has no call site yet",
+      "unit": "u27"
+    },
+    {
+      "id": "G30:Sources/AnalyticClientLive/LogEventInterceptor.swift:8ff84648",
+      "code": "G30",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/LogEventInterceptor.swift",
+      "line": 25,
+      "evidence": "install spans 47 lines",
+      "unit": "u28"
+    },
+    {
+      "id": "G14:Sources/AnalyticClientLive/LogEventInterceptor.swift:facda11a",
+      "code": "G14",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/LogEventInterceptor.swift",
+      "line": 25,
+      "evidence": "install reaches into analyticClient 5 times",
+      "unit": "u28"
+    },
+    {
+      "id": "N7:Sources/AnalyticClientLive/LogEventInterceptor.swift:a0225a83",
+      "code": "N7",
+      "tier": "B",
+      "path": "Sources/AnalyticClientLive/LogEventInterceptor.swift",
+      "line": 76,
+      "evidence": "isRelayed reads as a query \u2014 confirm it has no hidden effect",
+      "unit": "u30"
+    },
+    {
+      "id": "N5:Tests/AnalyticClientTests/AnalyticClientTests.swift:0bf66c9c",
+      "code": "N5",
+      "tier": "B",
+      "path": "Tests/AnalyticClientTests/AnalyticClientTests.swift",
+      "line": 11,
+      "evidence": "short name in a long body: s",
+      "unit": "u32"
+    },
+    {
+      "id": "N5:Tests/AnalyticClientTests/AnalyticClientTests.swift:c4c07a16",
+      "code": "N5",
+      "tier": "B",
+      "path": "Tests/AnalyticClientTests/AnalyticClientTests.swift",
+      "line": 13,
+      "evidence": "short name in a long body: d",
+      "unit": "u32"
+    },
+    {
+      "id": "N5:Tests/AnalyticClientTests/AnalyticClientTests.swift:737772dc",
+      "code": "N5",
+      "tier": "B",
+      "path": "Tests/AnalyticClientTests/AnalyticClientTests.swift",
+      "line": 14,
+      "evidence": "short name in a long body: b",
+      "unit": "u32"
+    },
+    {
+      "id": "G30:Tests/AnalyticClientTests/AnalyticClientTests.swift:e3ec910a",
+      "code": "G30",
+      "tier": "B",
+      "path": "Tests/AnalyticClientTests/AnalyticClientTests.swift",
+      "line": 51,
+      "evidence": "customClientTypedParams spans 33 lines",
+      "unit": "u36"
+    }
+  ],
+  "judgment_only": [
+    "T2",
+    "T8",
+    "T9"
+  ],
+  "cycles": {
+    "head": "591772e3b39053709b24d58c20ad6bc67bc73540"
+  },
+  "exceptions": {},
+  "verdicts": {}
+}

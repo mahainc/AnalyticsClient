@@ -1,0 +1,33 @@
+{
+  "path": "Sources/AnalyticClientLive/AnalyticFunnelObserver.swift",
+  "history": [
+    {
+      "markers": 3,
+      "decls_digest": "2bd467abe5a164d4c615bc6b8b8482a9ec358d96f5bde74f64e8d7cfb05eb97d"
+    }
+  ],
+  "decls": [
+    {
+      "kind": "class",
+      "name": "AnalyticFunnelObserver",
+      "signature": "()"
+    },
+    {
+      "kind": "function",
+      "name": "init",
+      "signature": "()"
+    },
+    {
+      "kind": "function",
+      "name": "startObserving",
+      "signature": "(_ sink: @escaping @Sendable (FunnelClient.Analytics.ObservedEvent) -> Void)"
+    },
+    {
+      "kind": "function",
+      "name": "values",
+      "signature": "(_ params: [String: Any])"
+    }
+  ],
+  "decls_digest": "2bd467abe5a164d4c615bc6b8b8482a9ec358d96f5bde74f64e8d7cfb05eb97d",
+  "markers": 3
+}
