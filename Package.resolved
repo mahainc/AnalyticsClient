@@ -1,5 +1,5 @@
 {
-  "originHash" : "4dc9de4317503fc86a5f9d33063096b17b4f802d7ebfc89239ef82652048698c",
+  "originHash" : "c7a3d9d5a243b862c2c857d182194b1eb2790adc44f7314a8afa0d4fad4d7a49",
   "pins" : [
     {
       "identity" : "abseil-cpp-binary",
@@ -51,8 +51,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mahainc/FunnelClient.git",
       "state" : {
-        "revision" : "ee1f0e3c84682e76bc8fa711223471861aa465aa",
-        "version" : "7.2.0"
+        "revision" : "68bfb0484a308d77ec5325d3b6d33febf1bea33d",
+        "version" : "9.0.0"
       }
     },
     {

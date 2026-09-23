@@ -14,7 +14,7 @@ let package = Package(
         .package(url: "https://github.com/pointfreeco/swift-dependencies.git", from: "1.9.0"),
         .package(url: "https://github.com/pointfreeco/swift-case-paths.git", from: "1.5.0"),
         .package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: "12.13.0"),
-        .package(url: "https://github.com/mahainc/FunnelClient.git", from: "8.0.0"),
+        .package(url: "https://github.com/mahainc/FunnelClient.git", from: "9.0.0"),
     ],
     targets: [
         .target(
